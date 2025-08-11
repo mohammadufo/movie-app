@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎬 Movie PWA
+A modern, responsive Progressive Web App (PWA) for browsing movies. This application is built with React and features performance optimizations like lazy loading for images and a clean, user-friendly interface.
 
-## Getting Started
+✨ Features
+Movie Browsing: View a list of popular movies.
 
-First, run the development server:
+Lazy Loading: Images are loaded on-demand as they enter the viewport to improve performance and reduce initial load time.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Loading Placeholders: Displays an animated placeholder while images are loading for a better user experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Responsive Design: Looks great on all devices, from mobile phones to desktops.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+PWA Ready: Can be installed on a user's home screen for an app-like experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+End-to-End =Testing: Includes a testing suite with Cypress to ensure reliability.
 
-## Learn More
+🚀 Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-To learn more about Next.js, take a look at the following resources:
+Prerequisites
+You need to have Node.js and pnpm installed on your system.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Installation
+Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+git clone [https://github.com/mohammadufo/movie-app](https://github.com/mohammadufo/movie-app)]
+cd movie-pwa
 
-## Deploy on Vercel
+Install dependencies using pnpm:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+pnpm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🏃‍♀️ Running the Application
+To start the development server, run the following command:
+
+pnpm start
+
+This will open the application in your default browser, usually at http://localhost:3000. The server will automatically reload when you make changes to the code.
+
+✅ Testing
+This project uses Cypress for end-to-end tests.
+
+End-to-End Tests
+To open the Cypress Test Runner and run tests interactively:
+
+pnpm run cypress:open
+
+(Assuming you have a script "cypress:open": "cypress open" in your package.json)
+
+🛠️ Technologies Used
+React: A JavaScript library for building user interfaces.
+
+React Testing Library: Simple and complete React DOM testing utilities that encourage good testing practices.
+
+Cypress: Fast, easy, and reliable testing for anything that runs in a browser.
+
+Tailwind CSS: A utility-first CSS framework for rapid UI development.
